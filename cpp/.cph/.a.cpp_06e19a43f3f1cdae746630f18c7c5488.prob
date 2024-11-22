@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"/Users/argho/Developer/iCode/cpp/a.cpp","tests":[{"id":1732211839483,"input":"Argho\n2","output":"Enter your name: Enter your age: Hello, Argho!\nYou are 20 years old.\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/argho/Developer/iCode/cpp/a.cpp","group":"local","local":true}
