@@ -43,4 +43,27 @@ grr = scatter_matrix(
     cmap=mglearn.cm3
 )
 
-plt.show()
+#plt.show()
+
+from sklearn.neighbors import KNeighborsClassifier
+knn=KNeighborsClassifier(n_neighbors=1)
+
+knn.fit(X_train, y_train)
+
+import numpy as np
+X_new=np.array([[5,2.9,1.0,.2]])
+
+print("X_new.shape: {}".format(X_new.shape))
+
+predition =knn.predict(X_new)
+print("Prediction: {}".format(predition))
+print("Prdiction Target Name: {}".format(
+    iris_dataset['target_names'][predition]
+)
+)
+
+y_pred=knn.predict(X_test)
+print("Test set predictions\n{}".format(y_pred))
+
+print("Test Score : {:.2f}\n".format(np.mean(y_pred==y_test)))
+
